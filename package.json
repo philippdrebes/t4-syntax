@@ -2,7 +2,7 @@
     "name": "t4-syntax",
     "displayName": "T4 syntax",
     "description": "Syntax highlighting for T4 text templates.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "philippdrebes",
     "engines": {
         "vscode": "^1.19.0"
@@ -11,16 +11,25 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "t4",
-            "aliases": ["T4 Text Template", "t4"],
-            "extensions": [".tt"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "t4",
-            "scopeName": "source.tt",
-            "path": "./syntaxes/t4.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "t4",
+                "aliases": [
+                    "T4 Text Template",
+                    "t4"
+                ],
+                "extensions": [
+                    ".tt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "t4",
+                "scopeName": "source.tt",
+                "path": "./syntaxes/t4.tmLanguage.json"
+            }
+        ]
     }
 }
